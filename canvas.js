@@ -9,6 +9,22 @@ canvas.setAttribute("height", altura);
 
 var desenhando = false;
 
+canvas.addEventListener('touchmove', function(event) {
+    for (var i = 0; i < event.touches.length; i++) {
+      var touch = event.touches[i];
+      //ctx.beginPath();
+      //ctx.arc(touch.pageX, touch.pageY, 2, 0, 2*Math.PI, true);
+      ctx.lineTo(touch.pageX, touch.pageY);
+      //ctx.fill();
+      ctx.stroke();
+    }
+  }, false);
+
+  canvas.addEventListener('touchmove', function(event) {
+    event.preventDefault();
+  }, false); 
+
+
 const movimento = function (evt) {
     if (desenhando) {
         ctx.lineTo(evt.clientX, evt.clientY);
