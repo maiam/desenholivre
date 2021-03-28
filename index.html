@@ -1,13 +1,39 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-</head>
-<body>
-    <canvas id="quadro" class="border"></canvas>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="desenho livre para criancas de 2 a 4 anos">
+    <meta name="author" content="Pedro Maia Monteiro">
+    <title>Desenho Livre</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Custom styles for this code -->
+    <link rel="stylesheet" href="main.css">
+
+  </head>
+  <body class="" onload="draw();">
+    <header class="text-center">
+      <nav class="navbar">
+          <div class="">
+              <a class="navbar-brand" href="#">
+              Desenho Livre
+              </a>
+          </div>
+          </nav>
+    </header>
+
+      <canvas id="quadro"></canvas>
+          
+      <footer class="fixed-bottom text-center text-dark-50">
+          <p></p>
+          <p>Made by @MaiaM</footer>
+
+    <!-- Custom scripts for this code -->
     <script src="canvas.js"></script>
-</body>
+    <script src="sketch.js"></script>
+
+  </body>
 </html>
