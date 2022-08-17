@@ -71,8 +71,8 @@ function draw(){
       for (var i = 0; i < event.touches.length; i++) {
         var touch = event.touches[i];
         ctx.lineTo(touch.pageX, touch.pageY-inicioAltura);
-        ctx.strokeStyle = paintbrushcolor;
         ctx.stroke();
+        ctx.strokeStyle = paintbrushcolor;
       }
     }, false);
   
