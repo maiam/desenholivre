@@ -1,11 +1,15 @@
-<!doctype html>
-<html lang="en" class="h-100">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
     <meta name="description" content="desenho livre para criancas de 2 a 4 anos">
     <meta name="author" content="Pedro Maia Monteiro">
     <title>Desenho Livre</title>
+    
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/17575dd2f5.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -14,13 +18,18 @@
     <link rel="stylesheet" href="main.css">
 
   </head>
-  <body class="" onload="draw();">
-    <header class="text-center">
+
+  <body onload="draw();">
+    <header>
       <nav class="navbar">
-          <div class="">
-              <a class="navbar-brand" href="#">
-              Desenho Livre
-              </a>
+        <a class="navbar-brand" href="#">
+          Desenho Livre
+          </a>
+          <div>
+              <button id= "paintbrush-red"class="btn"><i class="fa-solid fa-paintbrush" style="color:red"></i></button>
+              <button id= "paintbrush-green"class="btn"><i class="fa-solid fa-paintbrush" style="color:green"></i></button>
+              <button id= "paintbrush-blue"class="btn"><i class="fa-solid fa-paintbrush" style="color:blue"></i></button>
+              <button id= "paintbrush-eraser"class="btn"><i class="fa-solid fa-eraser" style="color:eraser"></i></button>
           </div>
           </nav>
     </header>
@@ -33,7 +42,5 @@
 
     <!-- Custom scripts for this code -->
     <script src="canvas.js"></script>
-    <script src="sketch.js"></script>
-
   </body>
 </html>
